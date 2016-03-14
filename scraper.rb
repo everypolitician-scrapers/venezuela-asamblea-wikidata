@@ -15,8 +15,7 @@ es_2016 = EveryPolitician::Wikidata.wikipedia_xpath(
   after: '//span[@id="Diputados_por_partido"]',
   before: '//span[@id="Directiva"]',
   xpath: '//table[.//th[contains(.,"Diputado")]]//td[2]//a[not(@class="new")]/@title',
-  debug: true,
 ) 
 
-EveryPolitician::Wikidata.scrape_wikidata(names: { es: es_2011 | en_2016 }, output: false)
+EveryPolitician::Wikidata.scrape_wikidata(names: { es: es_2011 | es_2016 }, output: false)
 
